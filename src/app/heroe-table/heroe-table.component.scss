@@ -1,0 +1,63 @@
+.flex-container {
+  padding: 40px;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 100px;
+  border-radius: 25px;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  min-width: 500px;
+  max-width: 1000px;
+  height: 150px;
+  margin-top: 10px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  border-radius: 25px;
+}
+.flex-image {
+  max-width: 50px;
+}
+img {
+  border-radius: 50%;
+  width: 250%;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.flex-information {
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  top: 45px;
+  left: 200px;
+  display: block;
+  text-align: left;
+}
+.flex-number {
+  position: absolute;
+  top: 35px;
+  left: 125px;
+  display: block;
+  border-radius: 50%;
+  background-color: red;
+  min-width: 30px;
+}
+.flex-principal-information{
+  color: red;
+  font-size: 1.7em;
+}

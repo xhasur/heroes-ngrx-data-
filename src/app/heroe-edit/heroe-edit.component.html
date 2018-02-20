@@ -1,0 +1,23 @@
+<div class="container" style="width: 25rem;margin-top: 4rem">
+    <form [formGroup]="heroeForm" novalidate>
+        <div class="card" >
+            <img class="card-img-top" src="{{urlImage}}" alt="">
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" name="_name" formControlName="_name" readonly>
+        </div>
+        <div class="form-group">
+            <label for="email">NickName</label>
+            <input type="text" class="form-control" name="_nickname" formControlName="_nickname" readonly>
+        </div>
+        <div class="form-group">
+            <label for="phone">Height</label>
+            <input type="text" class="form-control" name="_height" formControlName="_height">
+        </div>
+        <div class="form-group" align="center">
+            <button class="btn btn-success" [disabled]="heroeForm.invalid" (click)="saveHeroe()">Guardar</button>
+            <button class="btn btn-secondary" routerLink="/">Atras</button>
+        </div>
+    </form>
+</div>
