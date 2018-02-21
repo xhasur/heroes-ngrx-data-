@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import Heroe from "../models/heroes.model";
+import Heroes from "../models/heroes.model";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
@@ -22,7 +23,7 @@ export class HeroesService {
     constructor(private http: Http) { }
 
 
-    getHeroes() {
+    getHeroes():Observable<Heroes[]> {
         return this.http.get(this.API_BASE)  //para traer todo lo dela  bsase de datos lugares etc..
             .map((resultado) => {
                 const data = resultado.json();
