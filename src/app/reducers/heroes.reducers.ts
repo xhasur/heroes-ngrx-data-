@@ -14,7 +14,7 @@ const initialState: State = {
 };
 
 export function HeroesReducer(state = initialState, action: Action) {
-    console.log(state, action);
+    //console.log(state, action);
     switch (action.type) {
         case HeroesActions.GET_HEROES_SUCCESS:
             return {  ...state, heroes: action.payload }

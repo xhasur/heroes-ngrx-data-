@@ -1,4 +1,4 @@
-import Heroes, { Heroe } from '../models/heroes.model'; 
+import Heroes  from '../models/heroes.model'; 
 import {Action} from '@ngrx/store'; 
 
 export const GET_HEROES = '[Todo] GET_HEROES'; 
