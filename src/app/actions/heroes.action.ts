@@ -1,4 +1,4 @@
-import Heroes  from '../models/heroes.model'; 
+import Heroe  from '../models/heroes.model'; 
 import {Action} from '@ngrx/store'; 
 
 export const GET_HEROES = '[Todo] GET_HEROES'; 
@@ -13,7 +13,7 @@ export class GetHeroesAction{
 
 export class GetHeroesSuccessAction{
     readonly type = GET_HEROES_SUCCESS; 
-    constructor(public payload: Heroes[]){} ; 
+    constructor(public payload: Heroe[]){} ; 
 } 
 
 /*
