@@ -3,6 +3,7 @@ export default class Heroe {
     _name: string;
     _nickname: string;
     _picture: string;
+    _height: string;
 
     constructor() {
         this._name = ""

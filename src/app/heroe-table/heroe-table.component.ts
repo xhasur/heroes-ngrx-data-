@@ -11,11 +11,6 @@ export class HeroeTableComponent {
   @Output() deleteHeroe = new EventEmitter<number>();
 
   constructor() {
-
-  }
-
-  ngOnInit() {
-    var me = this;
   }
 
 

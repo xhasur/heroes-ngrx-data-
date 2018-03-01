@@ -9,11 +9,11 @@ export interface State {
     heroes: Heroe[];
 };
 
-const initialState: State = {
+export const initialState: State = {
     heroes: []
 };
 
-export function HeroesReducer(state = initialState, action: Action) {
+export  function HeroesReducer(state = initialState, action: Action) {
     //console.log(state, action);
     switch (action.type) {
         case HeroesActions.GET_HEROES_SUCCESS:
