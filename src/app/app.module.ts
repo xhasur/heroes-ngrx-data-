@@ -26,8 +26,6 @@ import { HeroesEffects } from "./effects/heroes.effects";
 import { EffectsModule } from "@ngrx/effects";
 
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
-import { TestComponent } from './test/test.component';
-
 
 
 const appRoutes: Routes = [
@@ -43,8 +41,7 @@ const appRoutes: Routes = [
     ListHeroesComponent,
     HeroeEditComponent,
     HeroeTableComponent,
-    ObjectToArray,
-    TestComponent
+    ObjectToArray    
   ],
   imports: [
     BrowserModule,
