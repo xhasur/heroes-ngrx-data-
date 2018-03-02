@@ -23,17 +23,17 @@
 -->
 
 <div class="flex-container">
-  <div class="flex-item" *ngFor="let heroe of   ( heroes | ObjectToArray ) ; index as i" [routerLink]="['/heroe/edit', i]">
+  <div class="flex-item" *ngFor="let heroe of   ( heroes | ObjectToArray ) ; index as i">
     <div class="flex-image">
       <img src="{{heroe._picture}}">
     </div>
     <div class="flex-number">{{i+1}}</div>
     <div class="flex-information">
-      <div class="flex-principal-information">{{heroe._nickname}}</div>
+      <div class="flex-principal-information" [routerLink]="['/heroe/edit', i]">{{heroe._nickname}}</div>
       <div>{{heroe._name}}</div>
       <div>Estatura: {{heroe._height}}</div>
     </div>
-     <button class="btn btn-default" (click)="deleteHeroe.next(i)">Delete</button>
+     <button class="delete-button" (click)="deleteHeroe.next(i)">Delete</button>
   </div>
 
 </div>

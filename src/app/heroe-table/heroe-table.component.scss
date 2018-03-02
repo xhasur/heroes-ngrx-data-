@@ -1,7 +1,7 @@
  
 
 .flex-container {
-  padding: 40px;
+  padding: 60px;
   margin: 0;    
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,8 @@
   font-size: 1.5em;
   text-align: center;
   position: relative;
-  border-radius: 25px;
+  border-radius: 50px;
+  opacity: 0.9;
 }
 
 
@@ -38,8 +39,8 @@
 img {
   border-radius: 50%;
   width: 250%;
-  padding-top: 15px;
-  padding-left: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 .flex-information {
   color: black;
@@ -51,15 +52,37 @@ img {
   text-align: left;
 }
 .flex-number {
-  position: absolute;
-  top: 35px;
-  left: 125px;
-  display: block;
-  border-radius: 50%;
-  background-color: red;
-  min-width: 30px;
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    display: block;
+    border-radius: 50%;
+    background-color: red;
+    min-width: 70px;
+    opacity: 0.5;
+    min-height: 48px;
+    margin-top: 5px;
+    padding-top: 20px;
 }
 .flex-principal-information{
   color: red;
-  font-size: 1.7em;
+  font-size: 1.5em;
+  font-weight: initial;
+  text-decoration: underline;
+  cursor:pointer; cursor: hand;
+  font-weight: bolder;
 }
+
+.delete-button{
+    position: absolute;
+    background: red;
+    top: 8px;
+    color: #f2f2f2;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 38px;
+    right: 50px;
+    opacity: 0.5;
+}
+ 
+ 

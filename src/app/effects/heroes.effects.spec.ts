@@ -31,10 +31,10 @@ describe('My Effects', () => {
 
   });
 
+  
+  it('should work also', () => {
 
- it('should work also', () => {
-
- const payload: any = {
+    const payload: any = {
       heroes: [
         {
           _name: "Peter Parker",
@@ -93,13 +93,14 @@ describe('My Effects', () => {
 
     effects.loadCOmpanies$.subscribe(result => {
       expect(result).toEqual(payload);
+
     });
   });
+  
 
+  it('Heroes Action', () => {
 
-it('Heroes Action', () => {
-
- const payload: any = {
+    const payload: any = {
       heroes: [
         {
           _name: "Peter Parker",
@@ -143,7 +144,6 @@ it('Heroes Action', () => {
     const expectedResult = new MyActions.GetHeroesAction();
     effects.loadCOmpanies$.subscribe(result => {
       expect(result).toEqual(payload);
-      expect(payload).toEqual(2);
     });
 
   });
